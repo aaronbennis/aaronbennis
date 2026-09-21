@@ -27,3 +27,5 @@ jobs:
           git add .
           git diff --cached --quiet || git commit -m "Import updated Aaron Bennis portfolio"
           git push
+
+# Sync trigger: 2026-09-21 portfolio interaction update
