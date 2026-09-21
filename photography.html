@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photography by Aaron Bennis.">
+  <title>Photography — Aaron Bennis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gallery-page">
+  <div class="noise"></div>
+  <header class="nav gallery-nav"><a class="brand" href="index.html">AB<span>.</span></a><a class="gallery-back" href="index.html#work">← Back to portfolio</a></header>
+  <main>
+    <section class="gallery-hero">
+      <p class="eyebrow">STADIUM / ACTION / PORTRAITS</p>
+      <h1>Photo<em>graphy.</em></h1>
+    </section>
+    <section class="creative-gallery photo-gallery" aria-label="Photography gallery" data-filter-gallery>
+      <div class="gallery-filters" role="tablist" aria-label="Photography categories">
+        <button class="gallery-filter is-active" type="button" role="tab" aria-selected="true" data-filter="stadium">Stadium</button>
+        <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="action">Action</button>
+        <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="portraits">Portraits</button>
+      </div>
+      <div class="gallery-panel is-active" data-panel="stadium">
+        <div class="stadium-club-gallery" data-filter-gallery>
+          <nav class="club-letter-picker" aria-label="Find a club by first letter">
+            <span>Jump to</span>
+            <button type="button" data-letter-jump="A">A</button><button type="button" data-letter-jump="B">B</button><button type="button" data-letter-jump="C">C</button><button type="button" data-letter-jump="D">D</button><button type="button" data-letter-jump="E">E</button><button type="button" data-letter-jump="F">F</button><button type="button" data-letter-jump="G">G</button><button type="button" data-letter-jump="H">H</button><button type="button" data-letter-jump="K">K</button><button type="button" data-letter-jump="M">M</button><button type="button" data-letter-jump="O">O</button><button type="button" data-letter-jump="P">P</button><button type="button" data-letter-jump="R">R</button><button type="button" data-letter-jump="S">S</button><button type="button" data-letter-jump="T">T</button><button type="button" data-letter-jump="W">W</button><button type="button" data-letter-jump="Y">Y</button>
+          </nav>
+          <div class="gallery-filters stadium-club-filters" role="tablist" aria-label="Stadium photography by club">
+            <button class="gallery-filter is-active" type="button" role="tab" aria-selected="true" data-filter="afc-fylde">AFC Fylde</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="afc-totton">AFC Totton</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="aldershot-town">Aldershot Town</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="altrincham">Altrincham</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="barnet">Barnet</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="barrow-afc">Barrow AFC</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="boreham-wood">Boreham Wood</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="boston-united">Boston United</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="brackley-town">Brackley Town</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="braintree-town">Braintree Town</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="carlisle-united">Carlisle United</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="dagenham-and-redbridge">Dagenham &amp; Redbridge</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="dartford">Dartford</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="eastleigh">Eastleigh</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="ebbsfleet-united">Ebbsfleet United</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="farnborough">Farnborough</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="farnham-town">Farnham Town</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="fc-halifax-town">FC Halifax Town</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="forest-green-rovers">Forest Green Rovers</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="gateshead">Gateshead</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="guildford">Guildford</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="hartlepool-united">Hartlepool United</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="kidderminster-harriers">Kidderminster Harriers</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="maidenhead-united">Maidenhead United</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="morecambe">Morecambe</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="oxford-city">Oxford City</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="port-vale">Port Vale</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="rochdale-afc">Rochdale AFC</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="scunthorpe-united">Scunthorpe United</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="solihull-moors">Solihull Moors</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="southend-united">Southend United</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="sutton-united">Sutton United</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="tamworth">Tamworth</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="tonbridge">Tonbridge</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="truro-city">Truro City</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="walton-and-hersham">Walton &amp; Hersham</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="wealdstone">Wealdstone</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="welling">Welling</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="woking">Woking</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="yeovil-town">Yeovil Town</button>
+            <button class="gallery-filter" type="button" role="tab" aria-selected="false" data-filter="york-city">York City</button>
+          </div>
+          <div class="gallery-panel is-active" data-panel="afc-fylde"><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-fylde/afc-fylde-batch2-001.webp" alt="AFC Fylde photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-fylde/afc-fylde-batch2-002.webp" alt="AFC Fylde photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-fylde/afc-fylde-batch2-009.webp" alt="AFC Fylde photograph 9" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-fylde/afc-fylde-batch2-011.webp" alt="AFC Fylde photograph 11" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-fylde/afc-fylde-batch2-012.webp" alt="AFC Fylde photograph 12" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-fylde/afc-fylde-batch2-013.webp" alt="AFC Fylde photograph 13" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="afc-totton" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-totton/afc-totton-001.webp" alt="AFC Totton photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-totton/afc-totton-002.webp" alt="AFC Totton photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-totton/afc-totton-003.webp" alt="AFC Totton photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-totton/afc-totton-004.webp" alt="AFC Totton photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-totton/afc-totton-005.webp" alt="AFC Totton photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-totton/afc-totton-006.webp" alt="AFC Totton photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-totton/afc-totton-007.webp" alt="AFC Totton photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-totton/afc-totton-008.webp" alt="AFC Totton photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/afc-totton/afc-totton-009.webp" alt="AFC Totton photograph 9" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="aldershot-town" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/aldershot-town-01.jpg" alt="Aldershot Town stadium photograph 1" loading="lazy"><div class="gallery-caption"><div><p>ALDERSHOT TOWN / STADIUM</p></div><span>01</span></div></article>
+            <article class="gallery-item"><img src="assets/aldershot-town-02.jpg" alt="Aldershot Town stadium photograph 2" loading="lazy"><div class="gallery-caption"><div><p>ALDERSHOT TOWN / STADIUM</p></div><span>02</span></div></article>
+            <article class="gallery-item"><img src="assets/aldershot-town-03.jpg" alt="Aldershot Town stadium photograph 3" loading="lazy"><div class="gallery-caption"><div><p>ALDERSHOT TOWN / STADIUM</p></div><span>03</span></div></article>
+            <article class="gallery-item"><img src="assets/aldershot-town-04.jpg" alt="Aldershot Town stadium photograph 4" loading="lazy"><div class="gallery-caption"><div><p>ALDERSHOT TOWN / STADIUM</p></div><span>04</span></div></article>
+            <article class="gallery-item"><img src="assets/aldershot-town-05.jpg" alt="Aldershot Town stadium photograph 5" loading="lazy"><div class="gallery-caption"><div><p>ALDERSHOT TOWN / STADIUM</p></div><span>05</span></div></article>
+            <article class="gallery-item"><img src="assets/aldershot-town-06.jpg" alt="Aldershot Town stadium photograph 6" loading="lazy"><div class="gallery-caption"><div><p>ALDERSHOT TOWN / STADIUM</p></div><span>06</span></div></article>
+            <article class="gallery-item"><img src="assets/aldershot-town-07.jpg" alt="Aldershot Town stadium photograph 7" loading="lazy"><div class="gallery-caption"><div><p>ALDERSHOT TOWN / STADIUM</p></div><span>07</span></div></article>
+            <article class="gallery-item"><img src="assets/aldershot-town-08.jpg" alt="Aldershot Town stadium photograph 8" loading="lazy"><div class="gallery-caption"><div><p>ALDERSHOT TOWN / STADIUM</p></div><span>08</span></div></article>
+            <article class="gallery-item"><img src="assets/aldershot-town-09.jpg" alt="Aldershot Town stadium photograph 9" loading="lazy"><div class="gallery-caption"><div><p>ALDERSHOT TOWN / STADIUM</p></div><span>09</span></div></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="altrincham" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/altrincham-01.jpg" alt="Altrincham stadium photograph 1" loading="lazy"><div class="gallery-caption"><div><p>ALTRINCHAM / STADIUM</p></div><span>01</span></div></article>
+            <article class="gallery-item"><img src="assets/altrincham-02.jpg" alt="Altrincham stadium photograph 2" loading="lazy"><div class="gallery-caption"><div><p>ALTRINCHAM / STADIUM</p></div><span>02</span></div></article>
+            <article class="gallery-item"><img src="assets/altrincham-03.jpg" alt="Altrincham stadium photograph 3" loading="lazy"><div class="gallery-caption"><div><p>ALTRINCHAM / STADIUM</p></div><span>03</span></div></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="barnet" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/barnet/barnet-batch2-001.webp" alt="Barnet photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barnet/barnet-batch2-002.webp" alt="Barnet photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barnet/barnet-batch2-003.webp" alt="Barnet photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barnet/barnet-batch2-004.webp" alt="Barnet photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barnet/barnet-batch2-005.webp" alt="Barnet photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barnet/barnet-batch2-006.webp" alt="Barnet photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barnet/barnet-batch2-007.webp" alt="Barnet photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barnet/barnet-batch2-008.webp" alt="Barnet photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barnet/barnet-batch2-009.webp" alt="Barnet photograph 9" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barnet/barnet-batch2-010.webp" alt="Barnet photograph 10" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barnet/barnet-batch2-011.webp" alt="Barnet photograph 11" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barnet/barnet-batch2-012.webp" alt="Barnet photograph 12" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barnet/barnet-batch2-013.webp" alt="Barnet photograph 13" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barnet/barnet-batch2-014.webp" alt="Barnet photograph 14" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="barrow-afc" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/barrow-afc/barrow-afc-001.webp" alt="Barrow AFC photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barrow-afc/barrow-afc-002.webp" alt="Barrow AFC photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barrow-afc/barrow-afc-003.webp" alt="Barrow AFC photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barrow-afc/barrow-afc-004.webp" alt="Barrow AFC photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barrow-afc/barrow-afc-005.webp" alt="Barrow AFC photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barrow-afc/barrow-afc-006.webp" alt="Barrow AFC photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barrow-afc/barrow-afc-007.webp" alt="Barrow AFC photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barrow-afc/barrow-afc-008.webp" alt="Barrow AFC photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barrow-afc/barrow-afc-009.webp" alt="Barrow AFC photograph 9" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/barrow-afc/barrow-afc-010.webp" alt="Barrow AFC photograph 10" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="boreham-wood" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/boreham-wood-01.jpg" alt="Boreham Wood stadium photograph 1" loading="lazy"><div class="gallery-caption"><div><p>BOREHAM WOOD / STADIUM</p></div><span>01</span></div></article>
+            <article class="gallery-item"><img src="assets/boreham-wood-02.jpg" alt="Boreham Wood stadium photograph 2" loading="lazy"><div class="gallery-caption"><div><p>BOREHAM WOOD / STADIUM</p></div><span>02</span></div></article>
+            <article class="gallery-item"><img src="assets/boreham-wood-03.jpg" alt="Boreham Wood stadium photograph 3" loading="lazy"><div class="gallery-caption"><div><p>BOREHAM WOOD / STADIUM</p></div><span>03</span></div></article>
+            <article class="gallery-item"><img src="assets/boreham-wood-04.jpg" alt="Boreham Wood stadium photograph 4" loading="lazy"><div class="gallery-caption"><div><p>BOREHAM WOOD / STADIUM</p></div><span>04</span></div></article>
+            <article class="gallery-item"><img src="assets/boreham-wood-05.jpg" alt="Boreham Wood stadium photograph 5" loading="lazy"><div class="gallery-caption"><div><p>BOREHAM WOOD / STADIUM</p></div><span>05</span></div></article>
+            <article class="gallery-item"><img src="assets/boreham-wood-06.jpg" alt="Boreham Wood stadium photograph 6" loading="lazy"><div class="gallery-caption"><div><p>BOREHAM WOOD / STADIUM</p></div><span>06</span></div></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="boston-united" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/boston-united-01.jpg" alt="Boston United stadium photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/boston-united-02.jpg" alt="Boston United stadium photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/boston-united-03.jpg" alt="Boston United stadium photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/boston-united-04.jpg" alt="Boston United stadium photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/boston-united-05.jpg" alt="Boston United stadium photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/boston-united-06.jpg" alt="Boston United stadium photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/boston-united-07.jpg" alt="Boston United stadium photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/boston-united-08.jpg" alt="Boston United stadium photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/boston-united-09.jpg" alt="Boston United stadium photograph 9" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="brackley-town" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/brackley-town-01.jpg" alt="Brackley Town stadium photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/brackley-town-02.jpg" alt="Brackley Town stadium photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/brackley-town-03.jpg" alt="Brackley Town stadium photograph 3" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="braintree-town" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/braintree-town-01.jpg" alt="Braintree Town stadium photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/braintree-town-02.jpg" alt="Braintree Town stadium photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/braintree-town-03.jpg" alt="Braintree Town stadium photograph 3" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="carlisle-united" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/carlisle-united-01.jpg" alt="Carlisle United stadium photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/carlisle-united-02.jpg" alt="Carlisle United stadium photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/carlisle-united-03.jpg" alt="Carlisle United stadium photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/carlisle-united-04.jpg" alt="Carlisle United stadium photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/carlisle-united-05.jpg" alt="Carlisle United stadium photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/carlisle-united-06.jpg" alt="Carlisle United stadium photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/carlisle-united-07.jpg" alt="Carlisle United stadium photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/carlisle-united-08.jpg" alt="Carlisle United stadium photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/carlisle-united-09.jpg" alt="Carlisle United stadium photograph 9" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="dagenham-and-redbridge" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/dagenham-and-redbridge/dagenham-and-redbridge-batch2-001.webp" alt="Dagenham &amp; Redbridge photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/dagenham-and-redbridge/dagenham-and-redbridge-batch2-002.webp" alt="Dagenham &amp; Redbridge photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/dagenham-and-redbridge/dagenham-and-redbridge-batch2-003.webp" alt="Dagenham &amp; Redbridge photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/dagenham-and-redbridge/dagenham-and-redbridge-batch2-004.webp" alt="Dagenham &amp; Redbridge photograph 4" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="dartford" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/dartford/dartford-batch3-001.webp" alt="Dartford photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/dartford/dartford-batch3-002.webp" alt="Dartford photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/dartford/dartford-batch3-003.webp" alt="Dartford photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/dartford/dartford-batch3-004.webp" alt="Dartford photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/dartford/dartford-batch3-005.webp" alt="Dartford photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/dartford/dartford-batch3-006.webp" alt="Dartford photograph 6" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="eastleigh" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/eastleigh-01.jpg" alt="Eastleigh stadium photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/eastleigh-02.jpg" alt="Eastleigh stadium photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/eastleigh-03.jpg" alt="Eastleigh stadium photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/eastleigh-04.jpg" alt="Eastleigh stadium photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/eastleigh-05.jpg" alt="Eastleigh stadium photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/eastleigh-06.jpg" alt="Eastleigh stadium photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/eastleigh-07.jpg" alt="Eastleigh stadium photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/eastleigh-08.jpg" alt="Eastleigh stadium photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/eastleigh-09.jpg" alt="Eastleigh stadium photograph 9" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="ebbsfleet-united" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/ebbsfleet-united/ebbsfleet-united-batch2-001.webp" alt="Ebbsfleet United photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/ebbsfleet-united/ebbsfleet-united-batch2-002.webp" alt="Ebbsfleet United photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/ebbsfleet-united/ebbsfleet-united-batch2-004.webp" alt="Ebbsfleet United photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/ebbsfleet-united/ebbsfleet-united-batch2-007.webp" alt="Ebbsfleet United photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/ebbsfleet-united/ebbsfleet-united-batch2-008.webp" alt="Ebbsfleet United photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/ebbsfleet-united/ebbsfleet-united-batch2-009.webp" alt="Ebbsfleet United photograph 9" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/ebbsfleet-united/ebbsfleet-united-batch2-010.webp" alt="Ebbsfleet United photograph 10" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/ebbsfleet-united/ebbsfleet-united-batch2-011.webp" alt="Ebbsfleet United photograph 11" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/ebbsfleet-united/ebbsfleet-united-batch2-012.webp" alt="Ebbsfleet United photograph 12" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/ebbsfleet-united/ebbsfleet-united-batch2-013.webp" alt="Ebbsfleet United photograph 13" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/ebbsfleet-united/ebbsfleet-united-batch2-014.webp" alt="Ebbsfleet United photograph 14" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/ebbsfleet-united/ebbsfleet-united-batch2-015.webp" alt="Ebbsfleet United photograph 15" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/ebbsfleet-united/ebbsfleet-united-batch2-017.webp" alt="Ebbsfleet United photograph 17" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="farnborough" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/farnborough/farnborough-batch3-001.webp" alt="Farnborough photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/farnborough/farnborough-batch3-002.webp" alt="Farnborough photograph 2" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="farnham-town" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/farnham-town-01.jpg" alt="Farnham Town stadium photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/farnham-town-02.jpg" alt="Farnham Town stadium photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/farnham-town-03.jpg" alt="Farnham Town stadium photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/farnham-town-04.jpg" alt="Farnham Town stadium photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/farnham-town-05.jpg" alt="Farnham Town stadium photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/farnham-town-06.jpg" alt="Farnham Town stadium photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/farnham-town-08.jpg" alt="Farnham Town stadium photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/farnham-town-10.jpg" alt="Farnham Town stadium photograph 10" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/farnham-town-11.jpg" alt="Farnham Town stadium photograph 11" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/farnham-town-12.jpg" alt="Farnham Town stadium photograph 12" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="fc-halifax-town" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-001.webp" alt="FC Halifax Town photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-002.webp" alt="FC Halifax Town photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-003.webp" alt="FC Halifax Town photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-004.webp" alt="FC Halifax Town photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-005.webp" alt="FC Halifax Town photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-006.webp" alt="FC Halifax Town photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-007.webp" alt="FC Halifax Town photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-008.webp" alt="FC Halifax Town photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-009.webp" alt="FC Halifax Town photograph 9" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-010.webp" alt="FC Halifax Town photograph 10" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-011.webp" alt="FC Halifax Town photograph 11" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-012.webp" alt="FC Halifax Town photograph 12" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-013.webp" alt="FC Halifax Town photograph 13" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-014.webp" alt="FC Halifax Town photograph 14" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-015.webp" alt="FC Halifax Town photograph 15" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-016.webp" alt="FC Halifax Town photograph 16" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-017.webp" alt="FC Halifax Town photograph 17" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-018.webp" alt="FC Halifax Town photograph 18" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/fc-halifax-town/fc-halifax-town-019.webp" alt="FC Halifax Town photograph 19" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="forest-green-rovers" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/forest-green-rovers-01.jpg" alt="Forest Green Rovers stadium photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/forest-green-rovers-02.jpg" alt="Forest Green Rovers stadium photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/forest-green-rovers-03.jpg" alt="Forest Green Rovers stadium photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/forest-green-rovers-04.jpg" alt="Forest Green Rovers stadium photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/forest-green-rovers-05.jpg" alt="Forest Green Rovers stadium photograph 5" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="gateshead" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/gateshead-01.jpg" alt="Gateshead stadium photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/gateshead-02.jpg" alt="Gateshead stadium photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/gateshead-03.jpg" alt="Gateshead stadium photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/gateshead-04.jpg" alt="Gateshead stadium photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/gateshead-05.jpg" alt="Gateshead stadium photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/gateshead-06.jpg" alt="Gateshead stadium photograph 6" loading="lazy"></article>
+
+            <article class="gallery-item"><img src="assets/photography/stadium/gateshead/gateshead-001.webp" alt="Gateshead photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/gateshead/gateshead-002.webp" alt="Gateshead photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/gateshead/gateshead-003.webp" alt="Gateshead photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/gateshead/gateshead-004.webp" alt="Gateshead photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/gateshead/gateshead-005.webp" alt="Gateshead photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/gateshead/gateshead-006.webp" alt="Gateshead photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/gateshead/gateshead-007.webp" alt="Gateshead photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/gateshead/gateshead-008.webp" alt="Gateshead photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/gateshead/gateshead-009.webp" alt="Gateshead photograph 9" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="guildford" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/guildford/guildford-001.webp" alt="Guildford photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/guildford/guildford-002.webp" alt="Guildford photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/guildford/guildford-003.webp" alt="Guildford photograph 3" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="hartlepool-united" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/hartlepool-united/hartlepool-united-001.webp" alt="Hartlepool United photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/hartlepool-united/hartlepool-united-002.webp" alt="Hartlepool United photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/hartlepool-united/hartlepool-united-003.webp" alt="Hartlepool United photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/hartlepool-united/hartlepool-united-004.webp" alt="Hartlepool United photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/hartlepool-united/hartlepool-united-005.webp" alt="Hartlepool United photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/hartlepool-united/hartlepool-united-006.webp" alt="Hartlepool United photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/hartlepool-united/hartlepool-united-007.webp" alt="Hartlepool United photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/hartlepool-united/hartlepool-united-008.webp" alt="Hartlepool United photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/hartlepool-united/hartlepool-united-009.webp" alt="Hartlepool United photograph 9" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/hartlepool-united/hartlepool-united-010.webp" alt="Hartlepool United photograph 10" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/hartlepool-united/hartlepool-united-011.webp" alt="Hartlepool United photograph 11" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/hartlepool-united/hartlepool-united-012.webp" alt="Hartlepool United photograph 12" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="kidderminster-harriers" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/kidderminster-harriers/kidderminster-harriers-batch2-001.webp" alt="Kidderminster Harriers photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/kidderminster-harriers/kidderminster-harriers-batch2-003.webp" alt="Kidderminster Harriers photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/kidderminster-harriers/kidderminster-harriers-batch2-004.webp" alt="Kidderminster Harriers photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/kidderminster-harriers/kidderminster-harriers-batch2-005.webp" alt="Kidderminster Harriers photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/kidderminster-harriers/kidderminster-harriers-batch2-007.webp" alt="Kidderminster Harriers photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/kidderminster-harriers/kidderminster-harriers-batch2-010.webp" alt="Kidderminster Harriers photograph 10" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/kidderminster-harriers/kidderminster-harriers-batch2-011.webp" alt="Kidderminster Harriers photograph 11" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/kidderminster-harriers/kidderminster-harriers-batch2-012.webp" alt="Kidderminster Harriers photograph 12" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/kidderminster-harriers/kidderminster-harriers-batch2-015.webp" alt="Kidderminster Harriers photograph 15" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="maidenhead-united" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/maidenhead-united/maidenhead-united-batch2-001.webp" alt="Maidenhead United photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/maidenhead-united/maidenhead-united-batch2-003.webp" alt="Maidenhead United photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/maidenhead-united/maidenhead-united-batch2-004.webp" alt="Maidenhead United photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/maidenhead-united/maidenhead-united-batch2-005.webp" alt="Maidenhead United photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/maidenhead-united/maidenhead-united-batch2-006.webp" alt="Maidenhead United photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/maidenhead-united/maidenhead-united-batch2-007.webp" alt="Maidenhead United photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/maidenhead-united/maidenhead-united-batch2-008.webp" alt="Maidenhead United photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/maidenhead-united/maidenhead-united-batch2-009.webp" alt="Maidenhead United photograph 9" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/maidenhead-united/maidenhead-united-batch2-010.webp" alt="Maidenhead United photograph 10" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/maidenhead-united/maidenhead-united-batch2-013.webp" alt="Maidenhead United photograph 13" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/maidenhead-united/maidenhead-united-batch2-014.webp" alt="Maidenhead United photograph 14" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/maidenhead-united/maidenhead-united-batch2-015.webp" alt="Maidenhead United photograph 15" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/maidenhead-united/maidenhead-united-batch2-016.webp" alt="Maidenhead United photograph 16" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="morecambe" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/morecambe/morecambe-001.webp" alt="Morecambe photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/morecambe/morecambe-002.webp" alt="Morecambe photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/morecambe/morecambe-003.webp" alt="Morecambe photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/morecambe/morecambe-004.webp" alt="Morecambe photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/morecambe/morecambe-005.webp" alt="Morecambe photograph 5" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="oxford-city" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/oxford-city/oxford-city-batch3-001.webp" alt="Oxford City photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/oxford-city/oxford-city-batch3-002.webp" alt="Oxford City photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/oxford-city/oxford-city-batch3-003.webp" alt="Oxford City photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/oxford-city/oxford-city-batch3-004.webp" alt="Oxford City photograph 4" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="port-vale" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/port-vale/port-vale-001.webp" alt="Port Vale photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/port-vale/port-vale-002.webp" alt="Port Vale photograph 2" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="rochdale-afc" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/rochdale-afc/rochdale-afc-001.webp" alt="Rochdale AFC photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/rochdale-afc/rochdale-afc-002.webp" alt="Rochdale AFC photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/rochdale-afc/rochdale-afc-003.webp" alt="Rochdale AFC photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/rochdale-afc/rochdale-afc-004.webp" alt="Rochdale AFC photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/rochdale-afc/rochdale-afc-005.webp" alt="Rochdale AFC photograph 5" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="scunthorpe-united" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/scunthorpe-united/scunthorpe-united-001.webp" alt="Scunthorpe United photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/scunthorpe-united/scunthorpe-united-002.webp" alt="Scunthorpe United photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/scunthorpe-united/scunthorpe-united-003.webp" alt="Scunthorpe United photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/scunthorpe-united/scunthorpe-united-004.webp" alt="Scunthorpe United photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/scunthorpe-united/scunthorpe-united-005.webp" alt="Scunthorpe United photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/scunthorpe-united/scunthorpe-united-006.webp" alt="Scunthorpe United photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/scunthorpe-united/scunthorpe-united-007.webp" alt="Scunthorpe United photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/scunthorpe-united/scunthorpe-united-008.webp" alt="Scunthorpe United photograph 8" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="solihull-moors" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/solihull-moors/solihull-moors-001.webp" alt="Solihull Moors photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/solihull-moors/solihull-moors-002.webp" alt="Solihull Moors photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/solihull-moors/solihull-moors-003.webp" alt="Solihull Moors photograph 3" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="southend-united" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/southend-united/southend-united-001.webp" alt="Southend United photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/southend-united/southend-united-002.webp" alt="Southend United photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/southend-united/southend-united-003.webp" alt="Southend United photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/southend-united/southend-united-004.webp" alt="Southend United photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/southend-united/southend-united-005.webp" alt="Southend United photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/southend-united/southend-united-006.webp" alt="Southend United photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/southend-united/southend-united-007.webp" alt="Southend United photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/southend-united/southend-united-008.webp" alt="Southend United photograph 8" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="sutton-united" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-001.webp" alt="Sutton United photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-002.webp" alt="Sutton United photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-003.webp" alt="Sutton United photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-004.webp" alt="Sutton United photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-005.webp" alt="Sutton United photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-006.webp" alt="Sutton United photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-007.webp" alt="Sutton United photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-008.webp" alt="Sutton United photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-009.webp" alt="Sutton United photograph 9" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-010.webp" alt="Sutton United photograph 10" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-011.webp" alt="Sutton United photograph 11" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-012.webp" alt="Sutton United photograph 12" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-013.webp" alt="Sutton United photograph 13" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-014.webp" alt="Sutton United photograph 14" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-015.webp" alt="Sutton United photograph 15" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-016.webp" alt="Sutton United photograph 16" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-017.webp" alt="Sutton United photograph 17" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-018.webp" alt="Sutton United photograph 18" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-019.webp" alt="Sutton United photograph 19" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-020.webp" alt="Sutton United photograph 20" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-021.webp" alt="Sutton United photograph 21" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-022.webp" alt="Sutton United photograph 22" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-023.webp" alt="Sutton United photograph 23" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-024.webp" alt="Sutton United photograph 24" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-025.webp" alt="Sutton United photograph 25" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-026.webp" alt="Sutton United photograph 26" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-027.webp" alt="Sutton United photograph 27" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-028.webp" alt="Sutton United photograph 28" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-029.webp" alt="Sutton United photograph 29" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-030.webp" alt="Sutton United photograph 30" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-031.webp" alt="Sutton United photograph 31" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-032.webp" alt="Sutton United photograph 32" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-033.webp" alt="Sutton United photograph 33" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-034.webp" alt="Sutton United photograph 34" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-035.webp" alt="Sutton United photograph 35" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-036.webp" alt="Sutton United photograph 36" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-037.webp" alt="Sutton United photograph 37" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-038.webp" alt="Sutton United photograph 38" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-039.webp" alt="Sutton United photograph 39" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-040.webp" alt="Sutton United photograph 40" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-041.webp" alt="Sutton United photograph 41" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-042.webp" alt="Sutton United photograph 42" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-043.webp" alt="Sutton United photograph 43" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-044.webp" alt="Sutton United photograph 44" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-045.webp" alt="Sutton United photograph 45" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-046.webp" alt="Sutton United photograph 46" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-047.webp" alt="Sutton United photograph 47" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-048.webp" alt="Sutton United photograph 48" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-049.webp" alt="Sutton United photograph 49" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-050.webp" alt="Sutton United photograph 50" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-051.webp" alt="Sutton United photograph 51" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-052.webp" alt="Sutton United photograph 52" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-053.webp" alt="Sutton United photograph 53" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-054.webp" alt="Sutton United photograph 54" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-055.webp" alt="Sutton United photograph 55" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-056.webp" alt="Sutton United photograph 56" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-057.webp" alt="Sutton United photograph 57" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-058.webp" alt="Sutton United photograph 58" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-059.webp" alt="Sutton United photograph 59" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-060.webp" alt="Sutton United photograph 60" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-061.webp" alt="Sutton United photograph 61" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-062.webp" alt="Sutton United photograph 62" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-063.webp" alt="Sutton United photograph 63" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-064.webp" alt="Sutton United photograph 64" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-065.webp" alt="Sutton United photograph 65" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-066.webp" alt="Sutton United photograph 66" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-067.webp" alt="Sutton United photograph 67" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-068.webp" alt="Sutton United photograph 68" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/sutton-united/sutton-united-batch3-069.webp" alt="Sutton United photograph 69" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="tamworth" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/tamworth/tamworth-001.webp" alt="Tamworth photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/tamworth/tamworth-002.webp" alt="Tamworth photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/tamworth/tamworth-003.webp" alt="Tamworth photograph 3" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="tonbridge" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/tonbridge/tonbridge-001.webp" alt="Tonbridge photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/tonbridge/tonbridge-002.webp" alt="Tonbridge photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/tonbridge/tonbridge-003.webp" alt="Tonbridge photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/tonbridge/tonbridge-004.webp" alt="Tonbridge photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/tonbridge/tonbridge-005.webp" alt="Tonbridge photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/tonbridge/tonbridge-006.webp" alt="Tonbridge photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/tonbridge/tonbridge-007.webp" alt="Tonbridge photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/tonbridge/tonbridge-008.webp" alt="Tonbridge photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/tonbridge/tonbridge-009.webp" alt="Tonbridge photograph 9" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="truro-city" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/truro-city/truro-city-001.webp" alt="Truro City photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/truro-city/truro-city-002.webp" alt="Truro City photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/truro-city/truro-city-003.webp" alt="Truro City photograph 3" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="walton-and-hersham" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/walton-and-hersham/walton-and-hersham-001.webp" alt="Walton &amp; Hersham photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/walton-and-hersham/walton-and-hersham-002.webp" alt="Walton &amp; Hersham photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/walton-and-hersham/walton-and-hersham-003.webp" alt="Walton &amp; Hersham photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/walton-and-hersham/walton-and-hersham-004.webp" alt="Walton &amp; Hersham photograph 4" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="wealdstone" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/wealdstone/wealdstone-001.webp" alt="Wealdstone photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/wealdstone/wealdstone-002.webp" alt="Wealdstone photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/wealdstone/wealdstone-003.webp" alt="Wealdstone photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/wealdstone/wealdstone-004.webp" alt="Wealdstone photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/wealdstone/wealdstone-005.webp" alt="Wealdstone photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/wealdstone/wealdstone-006.webp" alt="Wealdstone photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/wealdstone/wealdstone-007.webp" alt="Wealdstone photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/wealdstone/wealdstone-008.webp" alt="Wealdstone photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/wealdstone/wealdstone-009.webp" alt="Wealdstone photograph 9" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/wealdstone/wealdstone-010.webp" alt="Wealdstone photograph 10" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/wealdstone/wealdstone-011.webp" alt="Wealdstone photograph 11" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/wealdstone/wealdstone-012.webp" alt="Wealdstone photograph 12" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="welling" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/welling/welling-batch3-001.webp" alt="Welling photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/welling/welling-batch3-002.webp" alt="Welling photograph 2" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="woking" hidden><div class="gallery-coming gallery-coming-wide">Woking<br>photos coming soon</div></div>
+          <div class="gallery-panel" data-panel="yeovil-town" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/yeovil-town/yeovil-town-001.webp" alt="Yeovil Town photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/yeovil-town/yeovil-town-002.webp" alt="Yeovil Town photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/yeovil-town/yeovil-town-003.webp" alt="Yeovil Town photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/yeovil-town/yeovil-town-004.webp" alt="Yeovil Town photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/yeovil-town/yeovil-town-005.webp" alt="Yeovil Town photograph 5" loading="lazy"></article>
+          </div></div>
+          <div class="gallery-panel" data-panel="york-city" hidden><div class="gallery-grid stadium-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/york-city/york-city-001.webp" alt="York City photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/york-city/york-city-002.webp" alt="York City photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/york-city/york-city-003.webp" alt="York City photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/york-city/york-city-004.webp" alt="York City photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/york-city/york-city-005.webp" alt="York City photograph 5" loading="lazy"></article>
+          </div></div>
+        </div>
+      </div>
+      <div class="gallery-panel" data-panel="action" hidden><div class="gallery-grid stadium-photo-grid action-photo-grid">
+        <article class="gallery-item"><img src="assets/photography/action/action-001.webp" alt="Action photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-002.webp" alt="Action photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-003.webp" alt="Action photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-004.webp" alt="Action photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-005.webp" alt="Action photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-006.webp" alt="Action photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-007.webp" alt="Action photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-008.webp" alt="Action photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-009.webp" alt="Action photograph 9" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-010.webp" alt="Action photograph 10" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-011.webp" alt="Action photograph 11" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-012.webp" alt="Action photograph 12" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-013.webp" alt="Action photograph 13" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-014.webp" alt="Action photograph 14" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-015.webp" alt="Action photograph 15" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-016.webp" alt="Action photograph 16" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-017.webp" alt="Action photograph 17" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-018.webp" alt="Action photograph 18" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-019.webp" alt="Action photograph 19" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-020.webp" alt="Action photograph 20" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-021.webp" alt="Action photograph 21" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-022.webp" alt="Action photograph 22" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-023.webp" alt="Action photograph 23" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-024.webp" alt="Action photograph 24" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-025.webp" alt="Action photograph 25" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-026.webp" alt="Action photograph 26" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-027.webp" alt="Action photograph 27" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-028.webp" alt="Action photograph 28" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-029.webp" alt="Action photograph 29" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-030.webp" alt="Action photograph 30" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-031.webp" alt="Action photograph 31" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-032.webp" alt="Action photograph 32" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-033.webp" alt="Action photograph 33" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-034.webp" alt="Action photograph 34" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-035.webp" alt="Action photograph 35" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-036.webp" alt="Action photograph 36" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-037.webp" alt="Action photograph 37" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-038.webp" alt="Action photograph 38" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-039.webp" alt="Action photograph 39" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-040.webp" alt="Action photograph 40" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-041.webp" alt="Action photograph 41" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-042.webp" alt="Action photograph 42" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-043.webp" alt="Action photograph 43" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-044.webp" alt="Action photograph 44" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-045.webp" alt="Action photograph 45" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-046.webp" alt="Action photograph 46" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-047.webp" alt="Action photograph 47" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-048.webp" alt="Action photograph 48" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-049.webp" alt="Action photograph 49" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-050.webp" alt="Action photograph 50" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-051.webp" alt="Action photograph 51" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-052.webp" alt="Action photograph 52" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-053.webp" alt="Action photograph 53" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-054.webp" alt="Action photograph 54" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-055.webp" alt="Action photograph 55" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-056.webp" alt="Action photograph 56" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-057.webp" alt="Action photograph 57" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-058.webp" alt="Action photograph 58" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-059.webp" alt="Action photograph 59" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-060.webp" alt="Action photograph 60" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-061.webp" alt="Action photograph 61" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-062.webp" alt="Action photograph 62" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-063.webp" alt="Action photograph 63" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-064.webp" alt="Action photograph 64" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-065.webp" alt="Action photograph 65" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-066.webp" alt="Action photograph 66" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-067.webp" alt="Action photograph 67" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-068.webp" alt="Action photograph 68" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-069.webp" alt="Action photograph 69" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-070.webp" alt="Action photograph 70" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-071.webp" alt="Action photograph 71" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-072.webp" alt="Action photograph 72" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-073.webp" alt="Action photograph 73" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-074.webp" alt="Action photograph 74" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-075.webp" alt="Action photograph 75" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-076.webp" alt="Action photograph 76" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-077.webp" alt="Action photograph 77" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-078.webp" alt="Action photograph 78" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-079.webp" alt="Action photograph 79" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-080.webp" alt="Action photograph 80" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-081.webp" alt="Action photograph 81" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-082.webp" alt="Action photograph 82" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-083.webp" alt="Action photograph 83" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-084.webp" alt="Action photograph 84" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-085.webp" alt="Action photograph 85" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-086.webp" alt="Action photograph 86" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-087.webp" alt="Action photograph 87" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-088.webp" alt="Action photograph 88" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-089.webp" alt="Action photograph 89" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-090.webp" alt="Action photograph 90" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-091.webp" alt="Action photograph 91" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-092.webp" alt="Action photograph 92" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-094.webp" alt="Action photograph 94" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-095.webp" alt="Action photograph 95" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-096.webp" alt="Action photograph 96" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-097.webp" alt="Action photograph 97" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-098.webp" alt="Action photograph 98" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-099.webp" alt="Action photograph 99" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-100.webp" alt="Action photograph 100" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-101.webp" alt="Action photograph 101" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-102.webp" alt="Action photograph 102" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-103.webp" alt="Action photograph 103" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-104.webp" alt="Action photograph 104" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-105.webp" alt="Action photograph 105" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-107.webp" alt="Action photograph 107" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-108.webp" alt="Action photograph 108" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-109.webp" alt="Action photograph 109" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-110.webp" alt="Action photograph 110" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-111.webp" alt="Action photograph 111" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-112.webp" alt="Action photograph 112" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-113.webp" alt="Action photograph 113" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-115.webp" alt="Action photograph 115" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-116.webp" alt="Action photograph 116" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-117.webp" alt="Action photograph 117" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-119.webp" alt="Action photograph 119" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-120.webp" alt="Action photograph 120" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-121.webp" alt="Action photograph 121" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-122.webp" alt="Action photograph 122" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-123.webp" alt="Action photograph 123" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-124.webp" alt="Action photograph 124" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-125.webp" alt="Action photograph 125" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-126.webp" alt="Action photograph 126" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-127.webp" alt="Action photograph 127" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-128.webp" alt="Action photograph 128" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-129.webp" alt="Action photograph 129" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-130.webp" alt="Action photograph 130" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-131.webp" alt="Action photograph 131" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-132.webp" alt="Action photograph 132" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-133.webp" alt="Action photograph 133" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-134.webp" alt="Action photograph 134" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-135.webp" alt="Action photograph 135" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-136.webp" alt="Action photograph 136" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-137.webp" alt="Action photograph 137" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-138.webp" alt="Action photograph 138" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-139.webp" alt="Action photograph 139" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-140.webp" alt="Action photograph 140" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-141.webp" alt="Action photograph 141" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-142.webp" alt="Action photograph 142" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-143.webp" alt="Action photograph 143" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-144.webp" alt="Action photograph 144" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-145.webp" alt="Action photograph 145" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-146.webp" alt="Action photograph 146" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-147.webp" alt="Action photograph 147" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-148.webp" alt="Action photograph 148" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-150.webp" alt="Action photograph 150" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-154.webp" alt="Action photograph 154" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/action/action-155.webp" alt="Action photograph 155" loading="lazy"></article>
+      </div></div>
+      <div class="gallery-panel" data-panel="portraits" hidden><div class="gallery-grid stadium-photo-grid portraits-photo-grid">
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-001.webp" alt="Portrait photograph 1" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-002.webp" alt="Portrait photograph 2" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-003.webp" alt="Portrait photograph 3" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-004.webp" alt="Portrait photograph 4" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-005.webp" alt="Portrait photograph 5" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-006.webp" alt="Portrait photograph 6" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-007.webp" alt="Portrait photograph 7" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-008.webp" alt="Portrait photograph 8" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-009.webp" alt="Portrait photograph 9" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-010.webp" alt="Portrait photograph 10" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-011.webp" alt="Portrait photograph 11" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-012.webp" alt="Portrait photograph 12" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-013.webp" alt="Portrait photograph 13" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-040.webp" alt="Portrait photograph 40" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-041.webp" alt="Portrait photograph 41" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-042.webp" alt="Portrait photograph 42" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-043.webp" alt="Portrait photograph 43" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-044.webp" alt="Portrait photograph 44" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-045.webp" alt="Portrait photograph 45" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-047.webp" alt="Portrait photograph 47" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-048.webp" alt="Portrait photograph 48" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-049.webp" alt="Portrait photograph 49" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-050.webp" alt="Portrait photograph 50" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-051.webp" alt="Portrait photograph 51" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-052.webp" alt="Portrait photograph 52" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-053.webp" alt="Portrait photograph 53" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-054.webp" alt="Portrait photograph 54" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-055.webp" alt="Portrait photograph 55" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-056.webp" alt="Portrait photograph 56" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-057.webp" alt="Portrait photograph 57" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-058.webp" alt="Portrait photograph 58" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-060.webp" alt="Portrait photograph 60" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-061.webp" alt="Portrait photograph 61" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-062.webp" alt="Portrait photograph 62" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-063.webp" alt="Portrait photograph 63" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-064.webp" alt="Portrait photograph 64" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-065.webp" alt="Portrait photograph 65" loading="lazy"></article>
+            <article class="gallery-item"><img src="assets/photography/stadium/signings/signings-067.webp" alt="Portrait photograph 67" loading="lazy"></article>
+          </div></div>
+    </section>
+  </main>
+  <footer><div>© 2026 Aaron Bennis</div><div>Photography archive</div><div>London, UK</div></footer>
+  <script src="script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3eaf22bce2683b9',t:'MTc5MDAxMzM4MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
