@@ -28,4 +28,4 @@ jobs:
           git diff --cached --quiet || git commit -m "Import updated Aaron Bennis portfolio"
           git push
 
-# Sync trigger: 2026-09-21 quickfire video embed
+# Sync trigger: 2026-09-21 vertical video fit
