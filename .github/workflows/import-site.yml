@@ -1,0 +1,29 @@
+name: Import portfolio site
+
+on:
+  push:
+    paths:
+      - '.github/workflows/import-site.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download portfolio
+        run: |
+          mkdir -p imported
+          wget --mirror --convert-links --adjust-extension --page-requisites --no-parent --directory-prefix=imported https://aaron-bennis-portfolio.aaronbennis17.chatgpt.site/
+          cp -a imported/aaron-bennis-portfolio.aaronbennis17.chatgpt.site/. .
+          rm -rf imported
+      - name: Commit imported site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --cached --quiet || git commit -m "Import updated Aaron Bennis portfolio"
+          git push
