@@ -28,4 +28,4 @@ jobs:
           git diff --cached --quiet || git commit -m "Import updated Aaron Bennis portfolio"
           git push
 
-# Sync trigger: 2026-09-22 restore blurred page background
+# Sync trigger: 2026-09-22 latest marketing campaign video
