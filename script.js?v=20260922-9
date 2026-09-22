@@ -76,6 +76,14 @@ const openVideoLightbox=({title,type,src,videoId,start=0,poster='',portrait=fals
     iframe.src=`https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1&controls=1&rel=0&playsinline=1&start=${start}`;
     iframe.className='video-lightbox-media';
     stage.appendChild(iframe);
+  }else if(type==='tiktok'){
+    const iframe=document.createElement('iframe');
+    iframe.title=title||'TikTok video';
+    iframe.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
+    iframe.allowFullscreen=true;
+    iframe.src=`https://www.tiktok.com/player/v1/${encodeURIComponent(videoId)}?autoplay=1&controls=1&progress_bar=1&play_button=1&volume_control=1&fullscreen_button=1&description=0&music_info=0&rel=0&native_context_menu=0`;
+    iframe.className='video-lightbox-media';
+    stage.appendChild(iframe);
   }else{
     const video=document.createElement('video');
     video.src=src;
@@ -193,6 +201,29 @@ document.querySelectorAll('.social-post-card .twitter-tweet').forEach(tweet=>{
   video.addEventListener('error',makeXFallback,{once:true});
   player.append(video,play);
   tweet.replaceWith(player);
+});
+
+// Render TikTok work as an on-site player rather than an outbound social link.
+document.querySelectorAll('.social-post-card[data-tiktok-video]').forEach(card=>{
+  const videoId=card.dataset.tiktokVideo;
+  const title=card.getAttribute('aria-label')||'TikTok marketing campaign';
+  const player=document.createElement('div');
+  player.className='social-video-player social-tiktok-player';
+  const frame=document.createElement('iframe');
+  frame.className='social-video-embed';
+  frame.title=title;
+  frame.loading='lazy';
+  frame.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
+  frame.allowFullscreen=true;
+  frame.src=`https://www.tiktok.com/player/v1/${encodeURIComponent(videoId)}?autoplay=0&controls=0&progress_bar=0&play_button=0&volume_control=0&fullscreen_button=0&description=0&music_info=0&rel=0&native_context_menu=0`;
+  const play=document.createElement('button');
+  play.className='social-video-play';
+  play.type='button';
+  play.setAttribute('aria-label',`Play ${title}`);
+  play.innerHTML='<span aria-hidden="true">▶</span>';
+  play.addEventListener('click',()=>openVideoLightbox({title,type:'tiktok',videoId,portrait:true}));
+  player.append(frame,play);
+  card.appendChild(player);
 });
 
 // Use the same direct sources for the muted decorative homepage reel.
