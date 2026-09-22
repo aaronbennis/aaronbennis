@@ -28,4 +28,4 @@ jobs:
           git diff --cached --quiet || git commit -m "Import updated Aaron Bennis portfolio"
           git push
 
-# Sync trigger: 2026-09-21 vertical video fit v3
+# Sync trigger: 2026-09-22 contain all videos and Osadebe
