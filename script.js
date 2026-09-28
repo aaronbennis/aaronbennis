@@ -76,14 +76,6 @@ const openVideoLightbox=({title,type,src,videoId,start=0,poster='',portrait=fals
     iframe.src=`https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1&controls=1&rel=0&playsinline=1&start=${start}`;
     iframe.className='video-lightbox-media';
     stage.appendChild(iframe);
-  }else if(type==='tiktok'){
-    const iframe=document.createElement('iframe');
-    iframe.title=title||'TikTok video';
-    iframe.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
-    iframe.allowFullscreen=true;
-    iframe.src=`https://www.tiktok.com/player/v1/${encodeURIComponent(videoId)}?autoplay=1&controls=1&progress_bar=1&play_button=1&volume_control=1&fullscreen_button=1&description=0&music_info=0&rel=0&native_context_menu=0`;
-    iframe.className='video-lightbox-media';
-    stage.appendChild(iframe);
   }else{
     const video=document.createElement('video');
     video.src=src;
@@ -132,12 +124,48 @@ const socialFallbackPosters={
   '2100592660301926511':'https://pbs.twimg.com/amplify_video_thumb/2100591856966864897/img/Wc3T9hBx9huj0w6e?format=webp&name=medium',
   '2100177878356742593':'https://pbs.twimg.com/amplify_video_thumb/2100156489176412160/img/4MbFTaFiAz7EUreF?format=webp&name=medium'
 };
+const createNativeSocialPlayer=({title,src,poster,onError})=>{
+  const player=document.createElement('div');
+  player.className='social-video-player';
+  const video=document.createElement('video');
+  video.className='social-video-embed';
+  video.src=src;
+  video.poster=poster||'';
+  video.referrerPolicy='no-referrer';
+  video.setAttribute('referrerpolicy','no-referrer');
+  video.preload='metadata';
+  video.controls=false;
+  video.playsInline=true;
+  video.setAttribute('playsinline','');
+  video.setAttribute('aria-label',title);
+  const play=document.createElement('button');
+  play.className='social-video-play';
+  play.type='button';
+  play.setAttribute('aria-label',`Play ${title}`);
+  play.innerHTML='<span aria-hidden="true">▶</span>';
+  const openPlayer=()=>openVideoLightbox({title,type:'video',src,poster,portrait:true});
+  play.addEventListener('click',openPlayer);
+  video.addEventListener('click',openPlayer);
+  if(window.matchMedia('(hover: hover) and (pointer: fine)').matches){
+    player.addEventListener('mouseenter',()=>{
+      video.muted=true;
+      video.play().catch(()=>{});
+    });
+    player.addEventListener('mouseleave',()=>video.pause());
+  }
+  video.addEventListener('play',()=>player.classList.add('is-playing'));
+  video.addEventListener('pause',()=>player.classList.remove('is-playing'));
+  video.addEventListener('ended',()=>player.classList.remove('is-playing'));
+  if(onError)video.addEventListener('error',onError,{once:true});
+  player.append(video,play);
+  return player;
+};
 document.querySelectorAll('.social-post-card .twitter-tweet').forEach(tweet=>{
   const link=tweet.querySelector('a[href*="/status/"]');
   const match=link?.href.match(/\/status\/(\d+)/);
   const source=match&&window.SOCIAL_VIDEO_SOURCES?.[match[1]];
   if(!match)return;
-  const player=document.createElement('div');
+  let player=document.createElement('div');
   player.className='social-video-player';
   const makeXFallback=()=>{
     if(player.classList.contains('is-x-link'))return;
@@ -160,70 +188,19 @@ document.querySelectorAll('.social-post-card .twitter-tweet').forEach(tweet=>{
     makeXFallback();
     return;
   }
-  const video=document.createElement('video');
-  video.className='social-video-embed';
-  video.src=source.src;
-  video.poster=source.poster;
-  video.referrerPolicy='no-referrer';
-  video.setAttribute('referrerpolicy','no-referrer');
-  video.preload='metadata';
-  video.controls=false;
-  video.playsInline=true;
-  video.setAttribute('playsinline','');
-  video.setAttribute('aria-label',tweet.closest('.social-post-card')?.querySelector('.social-post-label')?.textContent.trim()||'Sutton United social media video');
-  const play=document.createElement('button');
-  play.className='social-video-play';
-  play.type='button';
-  play.setAttribute('aria-label',`Play ${video.getAttribute('aria-label')}`);
-  play.innerHTML='<span aria-hidden="true">▶</span>';
-  const openPlayer=()=>openVideoLightbox({
-    title:video.getAttribute('aria-label'),
-    type:'video',
-    src:source.src,
-    poster:source.poster,
-    portrait:true
-  });
-  play.addEventListener('click',openPlayer);
-  video.addEventListener('click',openPlayer);
-  if(window.matchMedia('(hover: hover) and (pointer: fine)').matches){
-    player.addEventListener('mouseenter',()=>{
-      video.muted=false;
-      video.play().catch(()=>{
-        video.muted=true;
-        video.play().catch(()=>{});
-      });
-    });
-    player.addEventListener('mouseleave',()=>video.pause());
-  }
-  video.addEventListener('play',()=>player.classList.add('is-playing'));
-  video.addEventListener('pause',()=>player.classList.remove('is-playing'));
-  video.addEventListener('ended',()=>player.classList.remove('is-playing'));
-  video.addEventListener('error',makeXFallback,{once:true});
-  player.append(video,play);
+  const title=tweet.closest('.social-post-card')?.querySelector('.social-post-label')?.textContent.trim()||'Sutton United social media video';
+  player=createNativeSocialPlayer({title,src:source.src,poster:source.poster,onError:makeXFallback});
   tweet.replaceWith(player);
 });
 
-// Render TikTok work as an on-site player rather than an outbound social link.
-document.querySelectorAll('.social-post-card[data-tiktok-video]').forEach(card=>{
-  const videoId=card.dataset.tiktokVideo;
-  const title=card.getAttribute('aria-label')||'TikTok marketing campaign';
-  const player=document.createElement('div');
-  player.className='social-video-player social-tiktok-player';
-  const frame=document.createElement('iframe');
-  frame.className='social-video-embed';
-  frame.title=title;
-  frame.loading='lazy';
-  frame.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
-  frame.allowFullscreen=true;
-  frame.src=`https://www.tiktok.com/player/v1/${encodeURIComponent(videoId)}?autoplay=0&controls=0&progress_bar=0&play_button=0&volume_control=0&fullscreen_button=0&description=0&music_info=0&rel=0&native_context_menu=0`;
-  const play=document.createElement('button');
-  play.className='social-video-play';
-  play.type='button';
-  play.setAttribute('aria-label',`Play ${title}`);
-  play.innerHTML='<span aria-hidden="true">▶</span>';
-  play.addEventListener('click',()=>openVideoLightbox({title,type:'tiktok',videoId,portrait:true}));
-  player.append(frame,play);
-  card.appendChild(player);
+// Locally hosted clips use the exact same player path as every direct X video.
+document.querySelectorAll('.social-post-card[data-local-video]').forEach(card=>{
+  const title=card.getAttribute('aria-label')||'Sutton United social media video';
+  card.appendChild(createNativeSocialPlayer({
+    title,
+    src:card.dataset.localVideo,
+    poster:card.dataset.localPoster||''
+  }));
 });
 
 // Use the same direct sources for the muted decorative homepage reel.
