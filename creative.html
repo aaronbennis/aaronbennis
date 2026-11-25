@@ -9,6 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css%3Fv=20260922-9.css">
+<style>
+.numbered-creative-strip{display:flex;flex-wrap:nowrap;gap:14px;overflow-x:auto;overflow-y:hidden;padding:0 0 14px;margin:0 0 22px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.numbered-creative-strip .graphic-gallery-item{flex:0 0 180px;width:180px;margin:0;scroll-snap-align:start}
+.numbered-creative-strip img{display:block;width:100%;height:auto}
+@media(max-width:800px){.numbered-creative-strip{gap:10px}.numbered-creative-strip .graphic-gallery-item{flex-basis:150px;width:150px}}
+</style>
 </head>
 <body class="gallery-page">
   <div class="noise"></div>
@@ -95,7 +101,8 @@
 <article class="graphic-gallery-item"><img src="assets/graphics/matchday-toolkit/matchday-065.webp" alt="Matchday toolkit design 65" loading="lazy"></article>
 <article class="graphic-gallery-item"><img src="assets/graphics/matchday-toolkit/matchday-066.webp" alt="Matchday toolkit design 66" loading="lazy"></article>
 <article class="graphic-gallery-item"><img src="assets/graphics/matchday-toolkit/matchday-067.webp" alt="Matchday toolkit design 67" loading="lazy"></article></div></div>
-      <div class="gallery-panel is-active" data-panel="club-creative"><div class="graphic-design-grid"><article class="graphic-gallery-item"><img src="assets/graphics/club-creative/1.jpg" alt="Club creative design: 1.jpg" loading="lazy"></article>
+      <div class="gallery-panel is-active" data-panel="club-creative"><div class="graphic-design-grid"><div class="numbered-creative-strip" aria-label="Numbered creative series">
+<article class="graphic-gallery-item"><img src="assets/graphics/club-creative/1.jpg" alt="Club creative design: 1.jpg" loading="lazy"></article>
 <article class="graphic-gallery-item"><img src="assets/graphics/club-creative/2.jpg" alt="Club creative design: 2.jpg" loading="lazy"></article>
 <article class="graphic-gallery-item"><img src="assets/graphics/club-creative/3.jpg" alt="Club creative design: 3.jpg" loading="lazy"></article>
 <article class="graphic-gallery-item"><img src="assets/graphics/club-creative/4.jpg" alt="Club creative design: 4.jpg" loading="lazy"></article>
@@ -105,6 +112,7 @@
 <article class="graphic-gallery-item"><img src="assets/graphics/club-creative/8.jpg" alt="Club creative design: 8.jpg" loading="lazy"></article>
 <article class="graphic-gallery-item"><img src="assets/graphics/club-creative/9.jpg" alt="Club creative design: 9.jpg" loading="lazy"></article>
 <article class="graphic-gallery-item"><img src="assets/graphics/club-creative/10.jpg" alt="Club creative design: 10.jpg" loading="lazy"></article>
+</div>
 <h2 class="gallery-group-title">Player portraits and player graphics</h2>
 <article class="graphic-gallery-item"><img src="assets/graphics/club-creative/Alex Kirk.jpg" alt="Sutton United player graphic: Alex Kirk.jpg" loading="lazy"></article>
 <article class="graphic-gallery-item"><img src="assets/graphics/club-creative/Ben Brookes.jpg" alt="Sutton United player graphic: Ben Brookes.jpg" loading="lazy"></article>
